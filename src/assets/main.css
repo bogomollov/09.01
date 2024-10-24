@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+  body {
+    @apply text-black
+  }
+
+  h1 {
+    @apply text-5xl
+  }
+  h2 {
+    @apply text-4xl
+  }
+  h3 {
+    @apply text-3xl
+  }
+  h4 {
+    @apply text-2xl
+  }
+  h5 {
+    @apply text-xl
+  }
+  h6 {
+    @apply text-lg
+  }
+  p {
+    @apply text-base
+  }
+  small {
+    @apply text-sm
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent
+  }
+  .btn-secondary {
+    @apply bg-gray
+  }
+
+  .sale-price {
+    @apply text-sm line-through text-dark-gray
+  }
+}
